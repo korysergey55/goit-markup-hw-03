@@ -85,8 +85,6 @@ body {
 }
 /* ====================== HEADER =====================================*/
 .header{
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid  #E7E9FC;
 }
 .header .container{
@@ -121,7 +119,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: 332px;
+
+  margin-right: auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .nav .list{
   display: flex;
@@ -303,11 +304,11 @@ body {
   font-weight: 500;
   line-height: 1.2; 
   letter-spacing: 0.02em;
-  text-align: center;
+  text-align: center; 
   color: var(--text-color-secindary);
 }
 .team .position{
-   text-align: center;
+   text-align: center; 
    color: var(--text-color);
 }
 
@@ -385,8 +386,8 @@ body {
 }
 .card{
   width: calc((100% - 48px) / 3);
-  border: 1px solid #e7e9fc;
   border-top: none;
+  border: 1px solid #e7e9fc;
 }
 .card-wripper{
   padding: 32px 16px;
