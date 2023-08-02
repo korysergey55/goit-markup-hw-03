@@ -67,8 +67,8 @@ body {
 .container { 
   width: 100%;
   max-width: 1158px;
-  padding-left:10px; 
-  padding-right: 10px;
+  padding-left:15px; 
+  padding-right: 15px;
   margin: 0 auto;
 }
 .visually-hidden {
@@ -127,10 +127,12 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap:40px;
-}
-.nav .list .item{
+
   padding-top: 24px;
   padding-bottom: 24px;
+}
+.nav .list .item{
+  
 }
 .nav .link{
   font-weight: 500;
@@ -162,14 +164,14 @@ body {
  
 /* ====================== HERO ==========================================*/
 .hero{
-  min-height: 600px;
+  padding-top: 188px;
+  padding-bottom: 188px;
   background-color: var(--hero-color);
 }
 .hero .title{
   max-width: 496px;
   margin: 0 auto;
-  padding-top: 188px;
-
+  
   color: var(--bg-color);
   text-align: center;
   font-size: 56px;
@@ -182,6 +184,7 @@ body {
   margin: 0 auto;
   margin-top: 48px;
   padding: 16px 32px;
+  min-width: 169px;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -210,6 +213,9 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 24px;
+}
+.advantages .list .item{
+  flex-basis: calc((100% - 3 * 24px) / 4)
 }
 .advantages .title{
   margin-bottom: 8px;
@@ -247,7 +253,9 @@ body {
   flex-wrap: wrap;
   gap: 24px;
 }
-
+.doing .list .item{
+ flex-basis: calc((100% - 3 * 16px) / 3)
+}
 /* ====================== OUR TEAM ==========================================*/
 .team{
   padding-top: 120px;
@@ -278,16 +286,18 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  padding-bottom: 32px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
 
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);  
 
   background-color: var(--bg-color);
 }
+.team .item .wripper{
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
 .team .name{
-  margin-top: 32px;
   margin-bottom: 8px;
 
   font-size: 20px;
@@ -307,6 +317,9 @@ body {
   background-color: var(--footer-color);
 }
  .logo-footer{
+   display: inline-block;
+   margin-top: 16px;
+
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -326,7 +339,6 @@ body {
 }
 .footer .text{
   max-width: 264px;
-  margin-top: 16px;
   color:var(--footer-text);
 }
 
@@ -344,7 +356,7 @@ body {
   gap: 24px;
   
   margin-bottom: 72px;
-}
+} 
 .list .button{
   padding: 12px 24px;
   border-radius: 4px;
@@ -361,6 +373,7 @@ body {
  .button:hover, .button:focus{
   color: var(--bg-color);
   background-color: #404BBF;
+   border:1px solid transparent;
 }
 /* ====================== CARDS ==========================================*/
 .list{
@@ -371,14 +384,17 @@ body {
   gap:48px 24px;
 }
 .card{
-  padding-bottom: 32px;
+  width: calc((100% - 48px) / 3);
+  padding: 32px 16px;
   border: 1px solid  #E7E9FC;
+  border-top: none;
+}
+.card-wripper{
+
 }
 .card .title{
-  margin-top: 32px;
   margin-bottom: 8px;
-  margin-left: 16px;
-
+ 
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2; 
