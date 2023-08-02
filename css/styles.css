@@ -1,0 +1,221 @@
+/* ====================== Palette ==================================*/
+/* Main text color #2E2F42 */
+/* Secondory text color #434455 */
+/* Background #FFF */
+/* Footer #2E2F42 */
+/* Grid 1128 */
+
+/* ====================== Basic Reset =============================*/
+ul,ol {
+  list-style: none;
+  text-decoration: none;
+}
+button{
+  cursor: pointer;
+}
+.link{
+  text-decoration: none;
+}
+.address {
+  font-style: normal;
+}
+
+/* ====================== Inheritance =============================*/
+:root {
+  --text-color:#434455;
+  --text-color-secindary: #2E2F42;
+  --akcent-color:#4D5AE5;
+  --hover-color:#404bbf;
+
+  --logo-color:#2e2f42;
+  --logo-color-footer:#F4F4FD;
+
+  --bg-color:#FFFFFF ;
+  --bg-color-secindary:#F4F4FD;
+  
+  --hero-color:#2E2F42;
+  --footer-color:#2E2F42;
+  --footer-text:#F4F4FD;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  }
+.link{
+  text-decoration: none;
+}
+/* ====================== HEADER =====================================*/
+.header{}
+.header .nav .logo-header{
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17; 
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color:var(--akcent-color); 
+}
+.header .nav .acsent{
+  font-weight: 800;
+  line-height: 1.17; 
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--logo-color);
+}
+.nav .link{
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  color: var(--text-color-secindary);
+}
+.nav .link:hover,.link:focus{
+  color:var(--hover-color);
+}
+.address .link{
+  line-height: 1.5; 
+  letter-spacing: 0.32px;
+  color: var(--text-color);
+}
+.address .link:hover,.link:focus{
+  color:var(--hover-color);
+}
+ 
+/* ====================== HERO ==========================================*/
+.hero{
+  background-color: var(--hero-color);
+}
+.hero .title{
+  color: var(--bg-color);
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07; 
+  letter-spacing: 1.12px;
+}
+.hero .button{
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; 
+  letter-spacing: 0.04em;
+  
+  color: var( --bg-color);
+  background-color: var(--akcent-color);
+}
+.hero .button:hover, .button:focus{
+   background-color:var(--hover-color);
+}
+
+/* ====================== ADVANTAGES ==========================================*/
+.advantages .title{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2; 
+  letter-spacing: 0.4px;
+  color: var(--text-color-secindary);
+}
+.advantages .text{
+  color: var(--text-color);
+}
+
+/* ====================== WHAT WE ARE DOING ==========================================*/
+.doing .title{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11; 
+  letter-spacing: 0.72px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--text-color-secindary);
+}
+
+/* ====================== OUR TEAM ==========================================*/
+.team{
+  background-color: var(--bg-color-secindary);
+}
+.team .title{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11; 
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--text-color-secindary);
+}
+.team .item{
+  background-color: var(--bg-color);
+}
+.team .name{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2; 
+  letter-spacing: 0.02em;
+  color: var(--text-color-secindary);
+}
+.team .position{
+   color: var(--text-color);
+}
+
+/* ====================== FOOTER ==========================================*/
+.footer{
+  background-color: var(--footer-color);
+}
+ .logo-footer{
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17; 
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--akcent-color);
+}
+.logo-footer .acsent{
+  font-weight: 800;
+  line-height: 1.17; 
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--logo-color-footer);
+}
+.footer .text{
+  color:var(--footer-text);
+}
+
+/* ====================== PORTFOLIO ==========================================*/
+/* ====================== BUTTONS ==========================================*/
+.list .button{
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--akcent-color);
+  background-color: var(--bg-color-secindary);
+}
+ .button:hover, .button:focus{
+  color: var(--bg-color);
+  background-color: #404BBF;
+}
+/* ====================== CARDS ==========================================*/
+.card .title{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2; 
+  letter-spacing: 0.02em;
+  color: var(--text-color-secindary);
+}
+.card .text{
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
