@@ -372,7 +372,7 @@ body {
 }
 .card{
   padding-bottom: 32px;
-  /* border: 1px solid  #E7E9FC; */
+  border: 1px solid  #E7E9FC;
 }
 .card .title{
   margin-top: 32px;
