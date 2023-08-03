@@ -96,6 +96,8 @@ body {
 }
 .header .nav .logo-header{
   margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -121,8 +123,8 @@ body {
   flex-wrap: wrap;
 
   margin-right: auto;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
 }
 .nav .list{
   display: flex;
@@ -130,6 +132,9 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap:40px;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .nav .link{
